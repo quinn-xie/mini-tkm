@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "信息披露",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false
+}

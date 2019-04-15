@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "文章详情",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,30 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+
+@import '../../../style/common.wxss';
+
+/*项目信息*/
+.tkm-loanDetailInfo .title{color:#002d5c;font-size:medium;padding:10px 0;}
+.tkm-loanDetailInfo .title::before{content:"";width:5rpx;height:25rpx;background-color:#002d5c;display:inline-block;margin-right:10rpx;}
+.tkm-loanDetailInfo .content{color:#808080;font-size:small}
+.tkm-loanDetailInfo::after{content:"";width:100%;height:1rpx;background-color:#dcdcdc;display:inline-block;}
+
+.tkm-loanDetailInfo .cellBox{width:100%;position:relative;padding:10rpx 0;}
+.tkm-loanDetailInfo .cellBox .subTitle{width:35%;display:inline-block;vertical-align:top;text-align:left;}
+.tkm-loanDetailInfo .cellBox .subContent{width:65%;display:inline-block;vertical-align:top;text-align:right;color:#222222}
+.tkm-loanDetailInfo .cellBox icon{width:50rpx;height:50rpx;border-radius:50rpx;background-color:#002d5c;float:right;}
+.tkm-files{width:33%;display:inline-block;text-align:center;font-size: small;margin-bottom:30rpx}
+.tkm-files image{width:200rpx}
+.tkm-files text{display:block;color:#002d5c;}

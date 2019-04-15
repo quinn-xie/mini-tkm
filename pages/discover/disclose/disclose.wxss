@@ -1,0 +1,22 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../../style/common.wxss';
+.tkm-disclose{width:100%;}
+.tkm-disclose .box{width:50%;display:inline-block;vertical-align:top;text-align:center;}
+.tkm-disclose .subBox{width:90%;box-shadow:0px 0px 10px rgba(195,195,195,.7);padding:30rpx;border-radius:15rpx;margin:20px auto;box-sizing:border-box}
+.tkm-disclose .autoImg{width:100%;margin:20rpx 0;}
+.tkm-disclose .fixedImg{width:100rpx;height:100rpx;margin:20rpx 0;}
+.tkm-disclose text{width:100%;display:block;}
+.tkm-disclose .hoverClass{box-shadow:0px 0px 15px rgba(63,119,255,.4)}

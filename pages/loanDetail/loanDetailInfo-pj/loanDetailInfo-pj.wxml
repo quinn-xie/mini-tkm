@@ -1,0 +1,34 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!----------------------票据-------------------------->
+<!--资金描述-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>安全保障措施</view>
+  <view class='content cellBox'>银行到期承兑</view>
+  <view class='content cellBox'>票据真实有效，银行保管票据</view>
+  <view class='content cellBox'>资金全程第三方存管</view>
+</view>
+
+<!--票据图片-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>票据图片</view>
+    <image src='{{imgList}}' data-index='{{index}}' bindtap='previewImage' mode='widthFix'></image>
+</view>
+
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

@@ -1,0 +1,118 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--标题-->
+<view class='tkm-tab tkm-myRewardTitle tkm-page'>
+    <view class='tabItem {{thisItem == 1?"active":""}}' bindtap = "redPacketsTap" data-num = "1">{{redPackets}} </view>
+    <view class='tabItem {{thisItem == 2?"active":""}}' bindtap = "invitationTap" data-num = "2">{{invitation}}</view>
+    <view class='tabItem {{thisItem == 3?"active":""}}' bindtap = "myTKMcoinTap" data-num = "3">{{myTKMcoin}}</view>
+</view>
+<!--红包列表-->
+<view wx:if="{{thisItem == 1}}" class='tkm-myRewardContent tkm-page'>
+    <view class='redPackList {{item.state==true?"":"redPackUsed"}}' wx:for="{{redPackList}}" wx:key="{{index}}">
+      <view class='l'>{{item.amount}}<text>金额(元)</text></view>
+      <view class='r'>
+        <view class='ll'>出借金额≥{{item.limitedLoan}}元 <text>项目期限 {{item.endline}}</text></view>
+        <view class='rr'>{{item.endDate}}<text>到期日期</text></view>
+      </view>
+    </view>
+</view>
+<!--邀请奖励-->
+<view wx:if="{{thisItem == 2}}" class='tkm-myRewardContent tkm-page'>
+    <view class='myCoin'>
+      <image class='myCoinbg' src='/../../images/myCoinbg.png' mode="widthFix"></image>
+      8888.00 <view class='unit-yuan'>元</view>
+      <text>奖励总计</text>
+    </view>
+    <!--奖励明细-->
+    <view class='rewardTitle'>奖励明细</view>
+    <view class='tkm-shadowBox'>
+      <view class='content'>
+        <view class='l'>邀请收益</view>
+        <view class='r blue'>500,000 <view class='unit-yuan'>元</view></view>
+      </view>
+      <view class='line'></view>
+      <view class='content'>
+        <view class='l'>出借利息收益奖励</view>
+        <view class='r blue'>500,000 <view class='unit-yuan'>元</view></view>
+      </view>
+      <view class='line'></view>
+      <view class='content'>
+        <view class='l'>邀请注册出借人</view>
+        <view class='r blue'>10 <view class='unit-tian'>天</view></view>
+      </view>
+    </view>
+    <!--奖励说明-->
+    <view class='rewardTitle'>奖励说明</view>
+    <view class='tkm-shadowBox'>
+        <view class='content'>
+          <view class='bigTitle'>10元现金奖励</view>
+          邀请好友注册，且首笔出借≥2000元（债权转让项目除外），平台在购买的项目满标放款时，即向邀请人支付10元现金奖励。
+        </view>
+    </view>
+
+    <view class='tkm-shadowBox'>
+        <view class='content'>
+          <view class='bigTitle'>10%×每笔出借收益</view>
+          邀请好友注册，且成功完成任意一笔出借后，平台将按好友每笔出借收益的10%，向邀请人支付利息收益分享。
+        </view>
+    </view>
+
+    <!--gfaw-->
+    <!--BTN-->
+    <view class='gap'></view>
+    <view class='btn-fixed'>
+        <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 邀请好友 </button>
+    </view>
+</view>
+<!--我的太空币-->
+<view wx:if="{{thisItem == 3}}" class='tkm-myRewardContent tkm-page'>
+    <view class='myCoin' style='height:300rpx'>
+      88.88 <view class='unit-yuan'>太空币</view>
+      <text>100太空币 = 1元</text>
+    </view>
+    <view>
+
+    <view class='rewardTitle'>奖励明细</view>
+    <view class='tkm-shadowBox'>
+        <view class='content'>
+          <view class='l'>邀请奖励</view>
+          <view class='r blue'>+500,000</view>
+        </view>
+        <view class='content'>
+          <view class='l'>2015-01-05 14:52:55</view>
+          <view class='r'>余额:50,500,000</view>
+        </view>
+        <view class='line'></view>
+        <view class='content'>
+          <view class='l'>邀请奖励</view>
+          <view class='r blue'>+500,000</view>
+        </view>
+        <view class='content'>
+          <view class='l'>2015-01-05 14:52:55</view>
+          <view class='r'>余额:50,500,000</view>
+        </view>
+        <view class='line'></view>
+        <view class='content'>
+          <view class='l'>邀请奖励</view>
+          <view class='r blue'>+500,000</view>
+        </view>
+        <view class='content'>
+          <view class='l'>2015-01-05 14:52:55</view>
+          <view class='r'>余额:50,500,000</view>
+        </view>
+      </view>
+
+    </view>
+</view>

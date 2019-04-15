@@ -1,0 +1,20 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+/* 文章详情页面 */
+@import '../../style/common.wxss';
+.tkm-article-title{font-size: medium;padding:10px 10px;text-align:left}
+.tkm-article-date{font-size:x-small;padding:10px 10px;text-align:left}
+.tkm-article-viewTime{font-size:x-small;padding:10px 10px;text-align:left}
+.tkm-article-content{font-size:small;padding:10px 10px;text-align:left;border-top:1px solid #f5f5f5;padding:10px;box-sizing:border-box; line-height:180%;margin-top: 10px;}

@@ -1,0 +1,245 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "wx3d90859c73802288",
+	"projectname": "my-tkm",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": 0,
+					"name": "出借",
+					"pathName": "pages/loan/loan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文章消息列表",
+					"pathName": "pages/article/article",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文章详情",
+					"pathName": "pages/articleDetail/articleDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情",
+					"pathName": "pages/loanDetail/loanDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/discover/discover",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "项目详情-详情",
+					"pathName": "pages/loanDetail/loanDetailMsg/loanDetailMsg",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "项目详情-红本信息",
+					"pathName": "pages/loanDetail/loanDetailInfo-hb/loanDetailInfo-hb",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-记录",
+					"pathName": "pages/loanDetail/loanDetailInvestRecord/loanDetailInvestRecord",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-计划",
+					"pathName": "pages/loanDetail/loanDetaiRepayPlan/loanDetaiRepayPlan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/member/member",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "发现-信息披露",
+					"pathName": "pages/discover/disclose/disclose",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的 - 个人中心",
+					"pathName": "pages/member/mainInfo/mainInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的 - 个人中心 - 出借管理",
+					"pathName": "pages/member/mainInfo/loanManagement/loanManagement",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的 - 个人中心 - 我的奖励",
+					"pathName": "pages/member/mainInfo/myReward/myReward",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的 - 个人中心 - 交易记录",
+					"pathName": "pages/member/mainInfo/dealRecords/dealRecords",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现 - 信息披露 - 备案信息",
+					"pathName": "pages/discover/disclose/beian/beian",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现-信息披露-运营报告",
+					"pathName": "pages/discover/disclose/operateReport/operateReport",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现-信息披露-审计报告",
+					"pathName": "pages/discover/disclose/auditReport/auditReport",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现-信息披露-承诺函",
+					"pathName": "pages/discover/disclose/commitmentLetter/commitmentLetter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现-信息披露-公司基本信息",
+					"pathName": "pages/discover/disclose/tkmBaseInfo/tkmBaseInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的-个人中心-到期日历",
+					"pathName": "pages/member/mainInfo/calendar/calendar",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现-个人中心-平台数据总览",
+					"pathName": "pages/discover/disclose/tkmdataView/tkmdataView",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "message 消息提醒",
+					"pathName": "pages/message/message",
+					"query": ""
+				},
+				{
+					"id": 22,
+					"name": "项目集详情",
+					"pathName": "pages/loanPacketDetail/loanPacketDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目集详情-项目详情",
+					"pathName": "pages/loanPacketDetail/loanPacketMsg/loanPacketMsg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目集详情-项目信息",
+					"pathName": "pages/loanPacketDetail/loanPacketInfo/loanPacketInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目集详情-项目列表",
+					"pathName": "pages/loanPacketDetail/loanPacketList/loanPacketList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-票据信息",
+					"pathName": "pages/loanDetail/loanDetailInfo-pj/loanDetailInfo-pj",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-保理信息",
+					"pathName": "pages/loanDetail/loanDetailInfo-yb/loanDetailInfo-yb",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-恒信薪贷信息",
+					"pathName": "pages/loanDetail/loanDetailInfo-hxc/loanDetailInfo-hxc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-恒信业贷信息",
+					"pathName": "pages/loanDetail/loanDetailInfo-hxb/loanDetailInfo-hxb",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-什马分期信息[新]",
+					"pathName": "pages/loanDetail/loanDetailInfo-fqc/loanDetailInfo-fqc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-什马信用贷信息[新]",
+					"pathName": "pages/loanDetail/loanDetailInfo-xyb/loanDetailInfo-xyb",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "项目详情-什马信息[旧]",
+					"pathName": "pages/loanDetail/loanDetailInfo-smOld/loanDetailInfo-smOld",
+					"query": ""
+				}
+			]
+		}
+	}
+}

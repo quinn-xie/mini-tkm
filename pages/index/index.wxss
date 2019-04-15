@@ -1,0 +1,55 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../style/common.wxss';
+page {display:block; min-height:100%;background-color:#f6f7fb;font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;} 
+
+/**首页BANNER**/
+.tkm-swiper {height:420rpx;width:100%;}
+.tkm-swiper image{height:100%;width:100%;}
+
+/*首页公告*/
+.tkm-trailer {font-size:small;padding:15rpx;background:#ffffff;position:absolute;top:-30rpx;border-radius:50rpx;box-sizing:border-box;box-shadow:0px 5px 10px rgba(195,195,195, .2)}
+.tkm-trailer .trailer {height:40rpx;width:85vw;display:inline-block;margin-left:10px;vertical-align:top;font-size:small;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:0px;color:#002d5c;}
+
+/*安全保障 + 活动中心 +　推荐有礼*/
+.tkm-guide{margin-top:30px;}
+.tkm-guide .item{background:#ffffff;box-shadow:0px 5px 10px rgba(195,195,195, .2);border-radius:15rpx;color:#3f77ff;text-align:center;font-size:small;font-weight:bold;padding:5px 10px;box-sizing:border-box;}
+.tkm-guide text{width:100%; text-align:center;float:left}
+.tkm-guide image{width:35px;height:30px}
+.tkm-guide .hoverClass{background:#fbfcff;color:#3f77fff;box-shadow:0px 3px 8px rgba(63,119,255,.2);}
+
+/*新手专享*/
+.tkm-block{margin-top:5px;}
+.tkm-block .item{background:#ffffff;box-shadow:0px 5px 10px rgba(195,195,195, .2);border-radius:15rpx;padding:10px;box-sizing:border-box;}
+.tkm-block .hoverClass{background:#fbfcff;box-shadow:0px 3px 8px rgba(63,119,255,.2);opacity:0.8}
+.tkm-block .title{width:100%;margin-bottom:20rpx;float:left;}
+.tkm-block .title .bigTitle{display:inline-block;vertical-align:top;font-size:large;color:#002d5c;font-weight: bold}
+.tkm-block .title .subTitle{display:inline-block;vertical-align:top;font-size:x-small;color:#3f77ff;background:#e6edff;border-radius:20rpx;padding:4rpx 20rpx 6rpx 20rpx;margin-left:30rpx;margin-top:6px;}
+.tkm-noob-loan .item{background:none;box-shadow:none;border-radius:none;padding:0px;display:inline-block;vertical-align:top;color:#3f77ff}
+.tkm-noob-loan .item:first-child{width:40%;float:left}
+.tkm-noob-loan .item:last-child{float:right}
+.tkm-noob-loan .item .s-title-l{width:100%;float:left;color:#9e9e9e;padding-top:8px;font-size:x-small;text-align:left}
+.tkm-noob-loan .item .s-title-c{width:100%;float:left;color:#9e9e9e;padding-top:8px;font-size:x-small;text-align:center}
+.tkm-noob-loan .item .s-title-r{width:100%;float:left;color:#9e9e9e;padding-top:8px;font-size:x-small;text-align:right}
+.tkm-noob-loan .item .limitTitle{font-size: medium;height:40rpx;}
+
+/*小马优选 小马有财 小马集市*/
+.tkm-navList{padding:10px 0px;border-bottom:1px solid #ebebeb}
+.tkm-navList:last-child{border-bottom:none}
+.tkm-navList .item:first-child{width:12%}
+.tkm-navList .item:last-child{float:right;text-align:right}
+.tkm-navList .count{width:70rpx;height:70rpx;line-height:70rpx;border-radius:70rpx;background:#eaf0ff;color:#3f77ff;font-size: medium;text-align: center;margin-top: 10rpx;}
+.tkm-navList .bigTitle{font-size:large;font-weight:bold;color:#002d5c}
+.tkm-navList .bigTitle-b{font-size:large;}

@@ -1,0 +1,128 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--太空马首页-->
+<!-- BANNER -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" circular = "{{circular}}" indicator-active-color="{{indicatorActiveColor}}" class='tkm-swiper'>
+  <block wx:for="{{bannerList}}" wx:key="{{item.id}}">
+    <swiper-item id="{{item.id}}" data-url="{{item.bannerInfoDictVo.functionUrl}}" bindtap="goToDetail">
+      <image src="{{item.imgUrl}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 首页公告 -->
+<view style='position:relative'>
+  <view class='tkm-trailer tkm-page'>
+    <swiper class='trailer' vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{announcementList}}" wx:key="{{item.id}}">
+        <navigator url="../articleDetail/articleDetail?articleId={{item.announcementId}}">
+          <swiper-item>
+            <view>{{item.announcementId}}{{item.announcementTitle}}</view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+</view>
+<!-- 安全保障 + 活动中心 +　推荐有礼 -->
+<view class="tkm-flex tkm-guide tkm-page">
+    <view class="item" hover-class="hoverClass">
+      <image src='../../images/icon-index-a.png' mode="widthFix"></image>
+      <text>安全保障</text>
+    </view>
+    <view class="item" hover-class="hoverClass">
+      <image src='../../images/icon-index-b.png' mode="widthFix"></image>
+      <text>活动中心</text>
+    </view>
+    <view class="item" hover-class="hoverClass">
+      <image src='../../images/icon-index-c.png' mode="widthFix"></image>
+      <text>推荐有礼</text>
+    </view>
+</view>
+
+<!-- 新手专享 -->
+<view class="tkm-flex tkm-block tkm-page">
+    <view class="item" hover-class="hoverClass" bindtap='toDetail'>
+      <view class='title'>
+         <text class='bigTitle'>新手专享</text><view class='subTitle'>最高可出借10,000元</view>
+      </view>
+      <view class='tkm-noob-loan'>
+          <view class='item'>
+            <view class='limitTitle'>{{yearRate}}%<text class='red' wx-if="{{increasedRate}}">+{{increasedRate}}%</text></view>
+            <text class='s-title-l'>年利率</text>
+          </view>
+          <view class='item'>
+            <view class='limitTitle'>{{borrowDeadline}} {{timeLimitUnit}}</view>
+            <text class='s-title-c'>期限</text>
+          </view>
+          <view class='item' wx-if="{{loanState==6}}">
+            <view class='limitTitle' style='font-size:small'>{{clock}}</view>
+            <text class='s-title-c'>倒计时</text>
+          </view>
+          <view class='item' wx:else>
+            <view class='limitTitle'>{{investPercent}}%</view>
+            <text class='s-title-c'>进度</text>
+          </view>
+      </view>
+    </view>
+</view>
+
+<!--小马优选 小马有财 小马集市-->
+<view class='tkm-flex tkm-block tkm-page'>
+  <view class='item'>
+      <view class='tkm-noob-loan tkm-navList' bindtap='loanClick' data-id="1">
+          <view class='item'>
+            <view class='count'>10</view>
+            <!-- <view class='count'>{{packetCount}}</view> -->
+          </view>
+          <view class='item'>
+            <view class='bigTitle'>小马优选</view>
+            <text class='s-title-l'>集合资产 稳健增值</text>
+          </view>
+          <view class='item'>
+            <view class='bigTitle-b'>8.0%~17.0%</view>
+            <text class='s-title-r'>年利率</text>
+          </view>
+      </view>
+      <view class='tkm-noob-loan tkm-navList' bindtap="loanClick" data-id="2">
+          <view class='item'>
+            <view class='count'>28</view>
+            <!-- <view class='count'>{{losignCount}}</view> -->
+          </view>
+          <view class='item'>
+            <view class='bigTitle'>小马有财</view>
+            <text class='s-title-l'>产品丰富 随心选择</text>
+          </view>
+          <view class='item'>
+            <view class='bigTitle-b'>8.0%~17.0%</view>
+            <text class='s-title-r'>年利率</text>
+          </view>
+      </view>
+      <view class='tkm-noob-loan tkm-navList' bindtap="loanClick" data-id="3">
+          <view class='item'>
+              <view class='count'>2</view>
+            <!-- <view class='count'>{{transferCount}}</view> -->
+          </view>
+          <view class='item'>
+            <view class='bigTitle'>小马集市</view>
+            <text class='s-title-l'>债权转让 灵活理财</text>
+          </view>
+          <view class='item'>
+            <view class='bigTitle-b'>8.0%~17.0%</view>
+            <text class='s-title-r'>年利率</text>
+          </view>
+      </view>
+  </view>
+</view>

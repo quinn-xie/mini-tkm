@@ -1,0 +1,70 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<view class='discoverBg'>
+  <image src='../../images/discoverBg.png'></image>
+</view>
+<!--标题 登录头像-->
+<view class='tkm-discover-title'>
+  发现
+  <view style='font-size:small'>Hello <open-data type="userNickName"></open-data>,福利活动都在这里</view>
+  <view class='avatars'>
+    <!-- <image src='../../images/icon-a.png'></image> -->
+    <!--wxml-->
+    <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+    <open-data type="userAvatarUrl"></open-data>
+    <!-- 需要使用 button 来授权登录 -->
+    <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    <view wx:else>请升级微信版本</view> -->
+  </view>
+</view>
+<!--小导航-->
+<view class="flex-wrp">
+  <scroll-view class="scroll-view" scroll-x="true" style="width: 100%">
+    <navigator url="/pages/discover/disclose/disclose" hover-class="none">
+      <view class="scroll-view-item" hover-class='hoverClass'>
+        <image src='../../images/icon-discover-a.png' class='icon'></image>
+        信息披露
+      </view>
+    </navigator>
+    <navigator open-type="switchTab" url="/pages/member/mainInfo/mainInfo" hover-class="none">
+      <view class="scroll-view-item" hover-class='hoverClass'>
+        <image src='../../images/icon-discover-b.png' class='icon'></image>
+        会员中心
+      </view>
+    </navigator>
+    <navigator url="/pages/article/article" hover-class="none">
+      <view class="scroll-view-item" hover-class='hoverClass'>
+        <image src='../../images/icon-discover-c.png' class='icon'></image>
+        消息中心<!-- <text class='quantity'>18</text> -->
+      </view>
+    </navigator>
+    <view class="scroll-view-item" hover-class='hoverClass'>
+      <image src='../../images/icon-discover-d.png' class='icon'></image>
+      帮助中心
+    </view>
+  </scroll-view>
+</view>
+
+<!--热门活动-->
+<view class='tkm-hotEventTitle'>热门活动</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" circular="{{circular}}" indicator-active-color="{{indicatorActiveColor}}" class='tkm-swiper' previous-margin="30rpx" next-margin="30rpx">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item id="{{item.id}}" data-url="{{item.bannerInfoDictVo.functionUrl}}" bindtap="goToDetail">
+      <image src="{{item.imgUrl}}"/>
+      <view class='eventTitle'>{{item.bannerInfoDictVo.title}}</view>
+    </swiper-item>
+  </block>
+</swiper>

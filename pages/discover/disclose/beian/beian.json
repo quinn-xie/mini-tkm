@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "备案信息",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false
+}

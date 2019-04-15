@@ -1,0 +1,64 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!----------------------保理-------------------------->
+<!--借款用途-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>借款用途</view>
+  <view class='content'>{{loadDetailInfo.overview}}</view>
+</view>
+
+<!--还款来源-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>还款来源</view>
+  <view class='content'>{{loadDetailInfo.repaymentDescription}}</view>
+</view>
+
+<!--保障措施-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>保障措施</view>
+  <view class='content'>{{loadDetailInfo.guaranteeDescription}}</view>
+</view>
+
+<!--平台审批意见-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>平台审批意见</view>
+  <view class='content'>{{loadDetailInfo.riskDescription}}</view>
+</view>
+
+<!--相关附件-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>公司及图片信息</view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentBusinessLicenseImages != 0}}">
+      <view class='subTitle'>营业执照</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentBorroweridentitycardImages != 0}}">
+      <view class='subTitle'>法定代表人身份证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentContractImages != 0}}">
+      <view class='subTitle'>最高额连带责任保证书</view>
+      <icon></icon>
+  </view>
+</view>
+
+
+
+
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

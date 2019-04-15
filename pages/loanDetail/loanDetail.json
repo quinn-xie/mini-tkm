@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "小马有财",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "公司基本信息",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

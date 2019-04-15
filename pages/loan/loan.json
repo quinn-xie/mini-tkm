@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#3f77ff",
+  "backgroundColor": "#fafafa",
+  "navigationBarTitleText": "出借",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

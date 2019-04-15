@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#2a8cef",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "到期日历",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

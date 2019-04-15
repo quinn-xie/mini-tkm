@@ -1,0 +1,88 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../../../style/common.wxss';
+page {  
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#2a8cef), to(#8A2BE2));
+  display: flex;  
+  flex-direction: column;  
+  width: 100%;  
+  height: 100%;  
+  flex-wrap: nowrap;  
+  justify-content: flex-start;  
+  align-items: stretch;  
+  font-size:medium;  
+}  
+  
+.box {  
+  display: block;  
+  margin: 10px;  
+}  
+  
+.box-flex {  
+  display: -webkit-box;  
+  display: -webkit-flex;  
+  display: flex;  
+  flex-wrap: wrap;  
+}  
+  
+.flex-item {  
+  flex-flow: nowrap;  
+  flex-grow: 1;  
+  flex-shrink: 1;  
+  width: 14.2%;  
+}  
+  
+.item-content {  
+  margin:1px;  
+  padding: 0;  
+  text-align: center;  
+  background-color:rgba(0,0,0,.2);  
+  height: 2rem;  
+  line-height: 2rem;  
+  color: #fff; 
+  position:relative;
+}  
+
+.item-content .dota{  
+  position:absolute;width:6px;height:6px;left:8px;bottom:2px;border-radius:20px;background:#fff;display:block;z-index:1
+}
+.item-content .dotb{  
+  position:absolute;width:6px;height:6px;left:18px;bottom:2px;border-radius:20px;background:#fff;display:block;z-index:1
+}
+.item-content .dotc{  
+  position:absolute;width:6px;height:6px;left:28px;bottom:2px;border-radius:20px;background:#fff;display:block;z-index:1
+}
+  
+.bk-color-day {  
+  background-color: #8A2BE2;  
+}  
+  
+.item-content-current-day {  
+  flex-grow: 2;  
+}  
+
+
+.animations{
+  width:200rpx;
+  height:300rpx;
+  background:rgba(255, 255, 255, .5);
+  margin:0 auto; 
+  animation:mymove .5s infinite linear;position:relative;
+  }
+
+@keyframes mymove{
+  from {left:0}
+  to {transform: rotateY(360deg);}
+}

@@ -1,0 +1,32 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<view class='tkm-page'>
+    <view class='tkm-shadowBox' wx:for="{{operateReportList}}" wx:key="{{id}}">
+       <view class='content'>
+          <view class='l'>
+                  {{item.month}}月
+              <text>{{item.year}}年</text>
+          </view>
+          <view class='c'>
+              {{item.loanTotalMoney}} <view class='unit-wyuan'>万元</view>
+              <text class='gray'>当月成交额(含债转)</text>
+          </view>
+          <view class='r'>
+              {{item.acount}} <view class='unit-bi'>笔</view>
+              <text class='gray'>当月成交项目数</text>
+          </view>
+       </view>
+    </view>
+</view>

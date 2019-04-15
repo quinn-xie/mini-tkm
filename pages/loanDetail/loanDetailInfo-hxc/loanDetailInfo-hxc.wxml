@@ -1,0 +1,169 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!----------------------恒信薪贷-------------------------->
+<!--借款人信息-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>借款人信息</view>
+  <view class='content cellBox'>
+      <view class='subTitle'>姓名</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerName}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>身份证号码</view>
+      <view class='subContent'>{{loadDetailInfo.idCardNumber}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>年龄</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerAge}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>性别</view>
+      <view class='subContent'>{{loadDetailInfo.sex}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>婚姻状况</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.marriage}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>文化程度</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.qualifications}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>居住地</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.address}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>行业／职业</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.occupation}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>主要收入来源</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.mainIncomeOrigin}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>借款用途</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.behoof}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>还款来源</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.repayOrigin}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>年收入</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.annualIncome}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>平台借款次数</view>
+      <view class='subContent'>{{loadDetailInfo.historyBorrowCount}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>逾期次数</view>
+      <view class='subContent'>{{loadDetailInfo.historyOverAmount}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle' style='width:100%'>借款人在其他网络借贷平台借款情况</view>
+      <view class='subContent' style='width:100%;text-align:left;'>{{loadDetailInfo.assetLoanInfoVo.otherPlatformsCondition}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle' style='width:100%'>借款人收入及负债情况</view>
+      <view class='subContent' style='width:100%;text-align:left;'>{{loadDetailInfo.assetLoanInfoVo.incomeAndDebtConditon}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle' style='width:100%'>截至借款前6个月内借款人征信报告中的逾期情况</view>
+      <view class='subContent' style='width:100%;text-align:left;'>{{loadDetailInfo.assetLoanInfoVo.overdueCondition}}</view>
+  </view>
+
+</view>
+
+<!-- 借款描述 -->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>项目介绍</view>
+  <view class='content'>本项目为深圳市恒信永利金融服务有限公司（以下简称“恒信永利”）推荐的借款项目，借款人为在恒信永利公司所在地上班且现职工作持续6个月及以上并已转正、具有稳定工作收入来源的人群，本项目经太空马严格审核后在平台发布。</view>
+</view>
+<!-- 项目推荐方介绍 -->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>项目推荐方介绍</view>
+  <text class='content'>恒信永利是一家专注于小微贷款助贷业务的专业金融服务公司，主营业务是为工薪阶层和小微企业的小额信用贷款提供渠道服务。公司以IPC信贷技术和大数据为基础，建立了全面完整的业务管理体系和风险管理体系。恒信永利2014年成立于深圳，业务覆盖全国60多个城市，有80多家门店。自2016年开展小额信用贷款助贷业务以来，恒信永利累计助贷业务总金额超过16亿元。\n\n 恒信永利的股东及核心运营团队成员均来自国内著名银行、金融集团或者业内领先的小额贷款公司，有着十年以上的小贷风控经验、运营经验以及广泛的行业人脉和优良的行业口碑。</text>
+</view>
+<!-- 风险说明 -->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>风险说明</view>
+  <text class='content'>1、恒信永利采用IPC信贷技术对借款人实地调查，审核决议通过后推荐到太空马平台。
+  2、太空马风控团队严格审核借款项目真实性、借款人资质，确保借款人有足够的还款能力。
+  3、太空马严格履行平台义务和责任，为出借人实现债权提供专业服务。
+  4、太空马始终秉承客观公正的原则，严控风险，最大程度确保借款人信息的真实与准确性，但无法保证审核信息100%无误，不排除未来因借款人收入下降、过度举债等因素导致借款人财务状况恶化，从而发生逾期的可能。
+  5、太空马仅为信息发布平台，未以任何明示或暗示的方式对出借人提供担保或者承诺保本保息，出借人应根据自身风险承受能力和出借偏好，进行独立、理性的判断，并以此做出决策，自行承担资金出借的风险与责任。
+  </text>
+</view>
+<!-- 项目资料 -->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>项目资料</view>
+  <!--身份证正面  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMIdentitycardPositiveImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-a.png' bindtap='sfzzmPreviewImage' mode='widthFix'></image>
+    <text>身份证正面</text>
+  </view>
+  <!--身份证反面  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMIdentitycardNegativeImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-b.png' bindtap='sfzfmPreviewImage' mode='widthFix'></image>
+    <text>身份证反面</text>
+  </view>
+  <!--借款申请表  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMloanformImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-c.png' bindtap='jksqbPreviewImage' mode='widthFix'></image>
+    <text>借款申请表</text>
+  </view>
+  <!--决议单  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachment_RESOLUTION_SINGLE}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-d.png' bindtap='jydPreviewImage' mode='widthFix'></image>
+    <text>决议单</text>
+  </view>
+  <!-- 网查相关信息 -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachment_CHECK_NET}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-e.png' bindtap='wcxgxxPreviewImage' mode='widthFix'></image>
+    <text>网查相关信息</text>
+  </view>
+  <!--征信报告  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachment_CREDIT_REPORT}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-f.png' bindtap='zxbgPreviewImage' mode='widthFix'></image>
+    <text>征信报告</text>
+  </view>
+  <!--签约照片  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachment_SIGNING_PHOTOS}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-g.png' bindtap='qyzpPreviewImage' mode='widthFix'></image>
+    <text>签约照片</text>
+  </view>
+  <!--银行卡 -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachment_BANK_CARD}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-h.png' bindtap='yhkPreviewImage' mode='widthFix'></image>
+    <text>银行卡</text>
+  </view>
+  <!--合作协议  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMCooperationAgreementImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-i.png' bindtap='hzxyPreviewImage' mode='widthFix'></image>
+    <text>合作协议</text>
+  </view>
+  <!--营业执照 -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMBusinessLicenseImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/hx-cicon-j.png' bindtap='yyzzPreviewImage' mode='widthFix'></image>
+    <text>营业执照</text>
+  </view>
+
+</view>
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

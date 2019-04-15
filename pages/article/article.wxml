@@ -1,0 +1,57 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--文章列表-->  
+<view class='tkm-tab-title'>
+  <view class='tkm-flex radioBox tkm-page'>
+    <view class='item {{thisItem == 1?"active":""}}' bindtap="tkmyxTap" data-num = "1">{{tkmDT}}</view>
+    <view class='item {{thisItem == 2?"active":""}}' bindtap="tkmycTap" data-num = "2">{{tkmGG}}</view>
+    <view class='item {{thisItem == 3?"active":""}}' bindtap="tkmjsTap" data-num = "3">{{tkmZX}}</view>
+  </view>
+</view>
+
+<!--平台动态-->
+<view class='tkm-loan tkm-page' wx:if="{{thisItem == 1}}">
+  <view class='tkm-loanList' wx:for="{{articleDTList}}" wx:key="{{item.articleId}}" hover-class="hoverClass" bindtap='toDetail' data-articleId="{{item.articleId}}">
+    <view class='title'>
+      <view class='date'>{{item.createTime}}</view>
+      {{item.title}}
+    </view>
+  </view>
+  <view class='onReachBottom' wx:if='{{DTonReachBottom}}'>已经到底，暂无更多</view>
+</view>
+
+
+<!--平台公告-->
+<view class='tkm-loan tkm-page' wx:if="{{thisItem == 2}}">
+  <view class='tkm-loanList' wx:for="{{articleGGList}}" wx:key="{{item.articleId}}" hover-class="hoverClass" bindtap='toDetail' data-articleId="{{item.articleId}}">
+   <view class='title'>
+      <view class='date'>{{item.createTime}}</view>
+      {{item.title}}
+    </view>
+  </view>
+  <view class='onReachBottom' wx:if="{{YConReachBottom}}">已经到底，暂无更多</view>
+</view>
+
+
+<!--行业资讯-->
+<view class='tkm-loan tkm-page' wx:if="{{thisItem == 3}}">
+  <view class='tkm-loanList' wx:for="{{articleZXList}}" wx:key="{{item.articleId}}" hover-class="hoverClass" bindtap='toDetail' data-articleId="{{item.articleId}}">
+    <view class='title'>
+      <view class='date'>{{item.createTime}}</view>
+      {{item.title}}
+    </view>    
+  </view>
+  <view class='onReachBottom' wx:if="{{JSonReachBottom}}">已经到底，暂无更多</view>
+</view>

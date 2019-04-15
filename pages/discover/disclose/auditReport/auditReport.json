@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "审计报告",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

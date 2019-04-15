@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "承诺函",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

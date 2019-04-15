@@ -1,0 +1,181 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!----------------------什马分期-------------------------->
+<!--借款人信息-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>借款人信息</view>
+  <view class='content cellBox'>
+      <view class='subTitle'>借款人</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerName}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>身份证号码</view>
+      <view class='subContent'>{{loadDetailInfo.idCardNumber}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>性别</view>
+      <view class='subContent'>{{loadDetailInfo.sex}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>婚姻状态</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.marriage}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>行业／职业</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.occupation}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>主要收入来源</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.mainIncomeOrigin}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>借款用途</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.behoof}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>还款来源</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.repayOrigin}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>年经营收入</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.annualIncome}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>平台借款次数</view>
+      <view class='subContent'>{{loadDetailInfo.historyBorrowCount}}次</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>逾期次数</view>
+      <view class='subContent'>{{loadDetailInfo.historyOverCount}}次</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>借款人经营商户名称</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.distributor}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>员工人数</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.number}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>营业执照注册号</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.registration}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>企业类型</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.type}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>本地经营时间</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.businessTime}}年</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>营业场所面积</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.area}}平方米</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>营业地址</view>
+      <view class='subContent'>{{loadDetailInfo.assetLoanInfoVo.address}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle' style='width:100%'>借款人在其他网络借贷平台借款情况</view>
+      <view class='subContent' style='width:100%;text-align:left;'>{{loadDetailInfo.assetLoanInfoVo.otherPlatformsCondition}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle' style='width:100%'>借款人收入及负债情况</view>
+      <view class='subContent' style='width:100%;text-align:left;'>{{loadDetailInfo.assetLoanInfoVo.incomeAndDebtConditon}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle' style='width:100%'>截至借款前6个月内借款人征信报告中的逾期情况</view>
+      <view class='subContent' style='width:100%;text-align:left;'>{{loadDetailInfo.assetLoanInfoVo.overdueCondition}}</view>
+  </view>
+</view>
+
+<!--项目描述-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>项目描述</view>
+  <view class='content'>本项目为什马互联网金融信息服务（上海）有限公司（以下简称“什马金融“）推荐的债权项目，用于经营销售电动自行车资金周转。太空马审核后在平台发布借款项目，什马金融及其实际控制人，为借款项目提供连带责任保证。</view>
+</view>
+
+<!--项目描述-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>项目推荐方介绍</view>
+  <text class='content'>什马金融是一家以农村和县镇居民为主要客户，专注于电动车消费和供应链的金融服务公司。2015年1月，公司成立于上海，迄今已获得A轮、B轮、B+轮共三次风投，总计出借金额超过1亿元。
+
+公司成立以来，没有重大诉讼纠纷和其他行政机关处罚记录，商业履约记录较好。公司及实际控制人、法定代表人的征信记录良好，无重大负债和信用逾期。公司现金流状况、偿债能力和担保能力都较好。</text>
+</view>
+
+<!--风险测评-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>风险测评</view>
+  <text class='content'>1、太空马严格审核借款项目推荐方的资质，对推荐的借款人进行审核，确保借款用途的真实性；项目推荐方及其实际控制人为借款项目提供连带责任保证，什马金融已缴纳一定比例的保证金；太空马严格履行平台义务和责任，为出借人实现债权提供专业服务。
+
+2、借款人的真实性和还款能力经太空马审核；保证人资质和担保能力经过太空马专业团队评估后没有发现异常情况。但太空马不排除未来因借款人收入下降、过度举债等因素导致借款人财务状况恶化，从而发生逾期的可能。
+
+3、太空马始终秉承客观公正的原则，严控风险，最大程度的确保借款人信息的真实与准确性，但无法保证审核信息100%无误，亦不保证借款人能够按期偿还借款金额；
+
+4、太空马仅为信息发布平台，未以任何明示或暗示的方式对出借人提供担保或者承诺保本保息，出借人应根据自身风险承受能力和出借偏好，进行独立、理性的判断，并以此做出决策，自行承担资金出借的风险与责任。</text>
+</view>
+
+<!-- 项目资料 -->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>项目资料</view>
+  <!--借款人身份证  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMBorrowerIdentityCardImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-a.png' bindtap='jkrsfzPreviewImage' mode='widthFix'></image>
+    <text>借款人身份证</text>
+  </view>
+  <!--营业执照  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMBusinessLicenseImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-b.png' bindtap='yyzzPreviewImage' mode='widthFix'></image>
+    <text>营业执照</text>
+  </view>
+  <!--借款申请表  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMloanformImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-c.png' bindtap='jksqbPreviewImage' mode='widthFix'></image>
+    <text>借款申请表</text>
+  </view>
+  <!--风险评估报告  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMRiskAssessmentReportImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-d.png' bindtap='fxpgbgPreviewImage' mode='widthFix'></image>
+    <text>风险评估报告</text>
+  </view>
+  <!-- 借款服务协议 -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMLoanserviceAgreementImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-e.png' bindtap='jkfwxyPreviewImage' mode='widthFix'></image>
+    <text>借款服务协议</text>
+  </view>
+  <!--合作协议  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMCooperationAgreementImages}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-f.png' bindtap='hzxyPreviewImage' mode='widthFix'></image>
+    <text>合作协议</text>
+  </view>
+  <!--连带保证承诺书1  -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMSerialguarantee01Images}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-g.png' bindtap='ldbzcnsAPreviewImage' mode='widthFix'></image>
+    <text>连带保证承诺书1</text>
+  </view>
+  <!--连带保证承诺书2 -->
+  <view class='tkm-files' wx:if="{{loadDetailInfo.attachment.attachmentSMSerialguarantee02Images}}">
+    <image src='https://www.taikongma.com/resources/static/images/sm-bicon-h.png' bindtap='ldbzcnsBPreviewImage' mode='widthFix'></image>
+    <text>连带保证承诺书2</text>
+  </view>
+</view>
+
+
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

@@ -1,0 +1,42 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--项目详情-项目详情-->
+<view class='tkm-page'>
+  <view class='tkm-loanDetailMsg-list'>
+    <icon><image src='../../../images/icon-1.png'></image></icon>
+    <view class='content'>
+      <view class='title'>{{loanDetailMsg.remainTime}}</view>
+      <text>剩余时间</text>
+    </view>
+    <view class='rightContent'>
+      <view class='title'>{{loanDetailMsg.remainAmount}}</view>
+      <text>可投金额</text>
+    </view>
+  </view>
+  <view class='tkm-loanDetailMsg-list'>
+    <icon><image src='../../../images/icon-2.png'></image></icon>
+    <view class='content'>
+      <view class='title'>还款方式</view>
+      <text>{{loanDetailMsg.repaymentWay}}</text>
+    </view>
+  </view>
+  <view class='tkm-loanDetailMsg-list'>
+    <icon><image src='../../../images/icon-4.png'></image></icon>
+    <view class='content'>
+      <view class='title'>发布时间</view>
+      <text>{{loanDetailMsg.publishTime}}</text>
+    </view>
+  </view>
+</view>

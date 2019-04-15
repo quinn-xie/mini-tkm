@@ -1,0 +1,39 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<block wx:if="{{nodata==true}}">
+  <view class='noData'>
+    <image src='../../../images/nodata.png' mode="widthFix"></image>
+    暂无数据
+  </view>
+</block>
+<block wx:else>
+  <view class='fixedTop'>
+    <text style="text-align:left">还款日期</text>
+    <text>本金利息</text>
+    <text style="text-align:right">还款状态</text>
+  </view>
+  <view class='tkm-content'>
+    <view wx:for="{{repayPlan}}" wx:key="index">
+      <text style="text-align:left">{{item.preRepayDate}}</text>
+      <text>{{item.repayAmount}}</text>
+      <text style="text-align:right">{{item.status}}</text>
+    </view>
+  </view>
+  <!--BTN-->
+  <!-- <view class='gap'></view>
+  <view class='btn-fixed'>
+      <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+  </view> -->
+</block>

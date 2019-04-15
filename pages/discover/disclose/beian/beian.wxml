@@ -1,0 +1,49 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<view class='tkm-page'>
+  <view class='tkm-shadowBox'>
+    <view class='content'>
+      <view class='l'>备案登记地方金融监管部门</view>
+      <view class='r'>深圳市福田区金融办</view>
+    </view>
+    <view class='content'>
+      <view class='l'>备案登记时间</view>
+      <view class='r'>备案完成后披露</view>
+    </view>
+    <view class='content'>
+      <view class='l'>备案登记编号</view>
+      <view class='r'>备案完成后披露</view>
+    </view>
+    <view class='content'>
+      <view class='l'>电信业务经营许可信息</view>
+      <view class='r'>办理完成后披露</view>
+    </view>
+    <view class='content'>
+      <view class='l'>网站备案图标及编号</view>
+      <view class='r'>办理完成后披露</view>
+    </view>
+    <view class='content'>
+        <text class='l'>资金存管信息</text>
+        <text class='line'>资金存管银行全称：办理完成后披露</text>
+        <text class='line'>资金存管签约时间：办理完成后披露</text>
+        <text class='line'>资金存管全量业务上线时间：办理完成后披露</text>
+    </view>
+    <view class='content'>
+        <text class='l'>信息安全测评认证信息</text>
+        <text class='line'>认证机构：国家公安部</text>
+        <text class='line'>认证结果：现由广州竞远安全技术股份有限公司测评中，待测评通过后再由认证机构验收。</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<view class='tkm-disclose'>
+  <view class='box'>
+    <navigator url='/pages/discover/disclose/tkmBaseInfo/tkmBaseInfo' hover-class='none'>
+      <view class='subBox' hover-class='hoverClass'>
+        <text class='ta-l'>公司基本信息</text>
+        <image src='../../../images/index-disclose-a.png' class='autoImg' mode="widthFix"></image>
+      </view>
+    </navigator>
+    <navigator url='/pages/discover/disclose/tkmdataView/tkmdataView' hover-class='none'>
+      <view class='subBox' hover-class='hoverClass'>
+        <text class='ta-l'>平台数据总览</text>
+        <image src='../../../images/index-disclose-f.png' class='autoImg' mode="widthFix"></image>
+      </view>
+    </navigator>
+    <!-- <view class='subBox' hover-class='hoverClass'>
+      <text class='ta-l'>公司简介</text>
+      <image src='../../../images/icon-1.png' class='autoImg' mode="widthFix"></image>
+    </view> -->
+  </view>
+  <view class='box'>
+    <navigator url='/pages/discover/disclose/operateReport/operateReport' hover-class='none'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/index-disclose-b.png' class='fixedImg'></image>
+        <text class='ta-c'>运营报告</text>
+      </view>
+    </navigator>
+    <navigator url='/pages/discover/disclose/auditReport/auditReport' hover-class='none'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/index-disclose-c.png' class='fixedImg'></image>
+        <text class='ta-c'>审计报告</text>
+      </view>
+    </navigator>
+    <navigator url='/pages/discover/disclose/commitmentLetter/commitmentLetter' hover-class='none'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/index-disclose-d.png' class='fixedImg'></image>
+        <text class='ta-c'>承诺函</text>
+      </view>
+    </navigator>
+    <navigator url='/pages/discover/disclose/beian/beian' hover-class='none'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/index-disclose-e.png' class='fixedImg'></image>
+        <text class='ta-c'>备案信息</text>
+      </view>
+    </navigator>
+  </view>
+</view>

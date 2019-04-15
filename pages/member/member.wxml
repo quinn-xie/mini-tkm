@@ -1,0 +1,21 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<image src='../../images/loginbg.jpg' class='autoImg' mode="widthFix"></image>
+<view class='loginBox'>
+  <input type='number' placeholder="请输入用户名" maxlength="11" placeholder-style="color:#cccccc" bindinput="userNameInput" class='loginInput'/>
+  <input type="text" placeholder='请输入密码' placeholder-style="color:#cccccc"  bindinput="userPasswordInput" class='loginInput' password="true"/>  
+  <button bindtap="logIn" class='loginBtn'>登录</button>
+</view>
+<i-message id="message"></i-message>

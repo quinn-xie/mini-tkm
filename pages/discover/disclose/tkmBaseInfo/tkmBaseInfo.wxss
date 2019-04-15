@@ -1,0 +1,38 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../../../style/common.wxss';
+canvas{width:100px;height:100px;margin:0 auto}
+/*营业执照信息*/
+.tkm-baseInfoTitle{color:#002d5c;font-size:large;font-weight:bold;margin-top:50rpx;}
+.tkm-shadowBox{width:100%;box-shadow:0px 0px 10px rgba(195,195,195,.7);margin:30rpx auto;border-radius:15rpx;padding:30rpx 0;box-sizing:border-box;line-height:180%;}
+.titles{color:#3f77ff;font-size:medium; display: grid;}
+.tkm-shadowBox .content{width:100%;padding:5rpx 3%;box-sizing:border-box;font-size:small;color:#002d5c;}
+.tkm-shadowBox .content:nth-child(2n){background:#f4f8ff;}
+.tkm-shadowBox .content .line{display:inline-block;width:100%;text-align:left;}
+.tkm-shadowBox image{width:100%;}
+.tkm-shadowBox text{font-size:small;color:#002d5c;text-align:center;width:100%;display:block}
+
+/*股东股权占比*/
+.tkm-row-flex{display:-webkit-box;width:100%;}
+.tkm-row-flex .col{float:none;-webkit-box-flex:1;width:0;}
+.tkm-equity{width:100%;padding:0 1.5%;box-sizing:border-box;}
+.tkm-equity .col{box-shadow:0px 0px 10px rgba(195,195,195,.7);margin:20rpx 1.5%;padding:20rpx 0;box-sizing:border-box;text-align:center;line-height:150%;border-radius:10rpx}
+.tkm-equity .col image{width:70%;}
+.tkm-equity .col .title{display:block;font-size:small}
+.tkm-equity .col .name{display:block;font-size:medium;font-weight:bold;}
+.tkm-equity .col .scale{display:block;font-size:x-small}
+.tkm-equity .col .s-image{width:40%;margin:20rpx auto}
+
+/*平台从业人员概况*/

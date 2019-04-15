@@ -1,0 +1,22 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../../../style/common.wxss';
+
+.tkm-shadowBox{width:100%;box-shadow:0px 0px 15px rgba(195,195,195,.5);margin:30rpx auto;border-radius:15rpx;box-sizing:border-box;line-height:180%;}
+.tkm-shadowBox .content{width:100%;box-sizing:border-box;color:#002d5c;padding:5rpx;text-align:center;font-size:large;letter-spacing:1px;}
+.tkm-shadowBox .content text{display:block;font-size:x-small;letter-spacing:0px;}
+.tkm-shadowBox .content .l{display:inline-block;width:24%;vertical-align:middle;background-color:#e9f1ff;border-radius:5rpx;color:#3f77ff;padding:15rpx 0}
+.tkm-shadowBox .content .r{display:inline-block;width:38%;vertical-align:middle}
+.tkm-shadowBox .content .c{display:inline-block;width:38%;vertical-align:middle}

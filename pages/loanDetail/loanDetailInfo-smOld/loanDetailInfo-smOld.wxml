@@ -1,0 +1,128 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!------------------------什马旧版本------------------------>
+<!--借款人信息-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>借款人信息</view>
+  <view class='content cellBox'>
+      <view class='subTitle'>姓名</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerName}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>性别</view>
+      <view class='subContent'>{{loadDetailInfo.sex}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>证件号码</view>
+      <view class='subContent'>{{loadDetailInfo.idCardNumber}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>年龄</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerAge}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>职业</view>
+      <view class='subContent'>{{loadDetailInfo.post}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>借款用途</view>
+      <view class='subContent'>{{loadDetailInfo.behoof}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>还款来源</view>
+      <view class='subContent'>{{loadDetailInfo.loanOrigin}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>平台历史逾期次数</view>
+      <view class='subContent'>{{loadDetailInfo.historyOverCount}}次</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>平台历史逾期金额</view>
+      <view class='subContent'>{{loadDetailInfo.historyOverAmount}}元</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>平台当前逾期金额</view>
+      <view class='subContent'>{{loadDetailInfo.currentOverAmount}}元</view>
+  </view>
+</view>
+
+<block wx:if="{{loadDetailInfo.product=='什马分期'}}">
+  <!--借款描述-->
+  <view class='tkm-loanDetailInfo tkm-page'>
+    <view class='title'>借款描述</view>
+    <view class='content'>本项目为个人小额融资项目，借款用途为个人消费。第三方机构对借款人进行贷前审核后将借款人推荐给太空马，太空马进行二次审核，通过后在太空马平台发布借款项目，由第三方机构、个人为借款项目提供连带责任保证。</view>
+  </view>
+</block>
+<block wx:if="{{loadDetailInfo.product=='什马信用贷'}}">
+  <!--借款描述-->
+  <view class='tkm-loanDetailInfo tkm-page'>
+    <view class='title'>借款描述</view>
+    <view class='content'>本项目为个人小额融资项目，借款用途为经营资金周转。第三方机构对借款人进行贷前审核后推荐给太空马，太空马进行二次审核，通过后在太空马平台发布借款项目，由第三方机构、个人为借款项目提供连带责任保证。</view>
+  </view>
+</block>
+
+<!--审查项目-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>审查项目</view>
+  <view class='content cellBox'>
+      <view class='subTitle'>身份证认证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>信用报告</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>居住认证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>工作认证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>收入认证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>联系认证</view>
+      <icon></icon>
+  </view>
+</view>
+
+<!--风险测评-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>风险测评</view>
+  <text class='content'>1、借款人的真实性和还款能力经第三方机构审核评估通过，太空马复核无误；
+2、保证人资质和担保能力经过太空马专业团队评估后没有发现异常情况。</text>
+</view>
+
+<!--保障措施-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>风险测评</view>
+  <text class='content'>1、第三方机构严格审核借款人信息，确保借款用途的真实性；
+2、太空马严格审核第三方机构的资质，对第三方机构推荐的借款人进行复核；
+3、第三方机构及其实际控制人为借款项目提供连带责任保证，第三方机构已缴纳一定比例的保证金；
+4、太空马严格履行平台义务和责任，为出借人实现债权提供专业服务。</text>
+</view>
+
+
+
+
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

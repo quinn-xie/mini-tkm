@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "小马优选-项目列表",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

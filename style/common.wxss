@@ -1,0 +1,75 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+/*IMAGE*/
+image{max-width:100%;max-height:100%;}
+
+/*PAGE*/
+page{font-family:-apple-system-font,Helvetica Neue,Helvetica,sans-serif;}
+.tkm-page{width:94%;margin-left:3%;}
+
+/*HIDE SHOW*/
+.hide{display:none;}
+.show{display:block;}
+
+/*TEXTALIGN*/
+.ta-l{text-align:left}
+.ta-r{text-align:right}
+.ta-c{text-align:center}
+
+/*FLEX*/
+.tkm-flex{display:-webkit-box;display:-webkit-flex;display:flex}
+.tkm-flex .item{-webkit-box-flex:1;-webkit-flex:1;flex:1;margin:5px;}
+
+/*GAP*/
+.gap{height:100rpx;width:100%;clear:both;}
+
+/*COLOR*/
+.red{color:#ff0000}
+.blue{color:#3f77ff}
+.duckblue{color:#002d5c}
+.gray{color:#808080}
+
+/*BACKGROUND*/
+.redbg{background-color:#ff0000}
+.bluebg{background-color:#3f77ff}
+.graybg{background-color:#bdbdbd}
+.greenbg{background-color:#00ae04}
+
+/*AVATARS*/
+.avatars{width:110rpx;height:110rpx;border-radius:110rpx;background-color:#f1f2fc;}
+.avatars image{width:110rpx;height:110rpx;border-radius:110rpx;}
+
+/*BUTTON*/
+.btn-fixed{width:100%;position:fixed;bottom:0;left:0;padding:15rpx 3%;box-sizing:border-box;background:#ffffff;}
+.btnPrimary{width:100%;border-radius:80rpx;background-color:#3f77ff!important;color:#ffffff!important;font-size:large;line-height:90rpx;border:none;letter-spacing:5px;box-shadow:0px 3px 8px rgba(63,119,255,.6);}
+
+/*TAB*/
+.tkm-tab{width:100%;overflow:hidden;}
+.tkm-tab .tabItem{display:inline-block;font-size:medium;margin-right:50rpx;padding:10rpx 0;letter-spacing:2px;color:#c5c5c5}
+.tkm-tab .active{color:#002d5c;font-weight:bold;border-bottom:2px solid #002d5c;}
+
+/*UNIT*/
+.unit{display:inline-block;font-size:xx-small;color:#ffffff;border-radius:30rpx;padding:0rpx 10rpx; vertical-align:middle;line-height:140%;}
+.unit-yuan{display:inline-block;font-size:xx-small;background:#e7edff;color:#587695;border:1rpx solid #5c7998;border-radius:30rpx;padding:0rpx 10rpx; vertical-align:middle;line-height:140%;}
+.unit-tian{display:inline-block;font-size:xx-small;background:#fff8e7;color:#ffdd00;border:1rpx solid #ffe7a1;border-radius:30rpx;padding:0rpx 10rpx; vertical-align:middle;line-height:140%;}
+.unit-wyuan{display:inline-block;font-size:xx-small;background:#e9f1ff;color:#3f77ff;border-radius:30rpx;padding:0rpx 10rpx; vertical-align:middle;line-height:140%;}
+.unit-bi{display:inline-block;font-size:xx-small;background:#ffefef;color:#ff5b5b;border-radius:30rpx;padding:0rpx 10rpx; vertical-align:middle;line-height:140%;}
+
+/*NO DATA*/
+.noData{display:block;margin:0 auto;color:#cccccc;font-size:small;text-align:center;margin-top:300rpx;position:relative;width:400rpx;}
+.noData image{width:120rpx;height:120rpx;border-radius:120rpx;border:0rpx solid #cccccc;display:block;padding:10rpx;margin:0 auto;margin-bottom:20rpx;}
+
+/*onReachBottom*/
+.onReachBottom{width:100%;text-align:center;font-size:small;color:#cccccc;padding:30px;box-sizing:border-box;}

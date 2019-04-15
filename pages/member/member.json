@@ -1,0 +1,12 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#432a7d",
+  "backgroundColor": "#47398e",
+  "navigationBarTitleText": "登录",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false,
+  "component": true,
+  "usingComponents": {
+    "i-message": "../../components/message/message"
+  }
+}

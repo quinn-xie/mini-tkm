@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "小马有财-项目信息",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,79 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--平台数据总览-->
+<view class="tkm-charts">
+    <!--图表内容-->
+    <ec-canvas id="monthlyTransaction" wx:if="{{thisItem == 1}}" canvas-id="monthlyTransaction" ec="{{monthlyTransaction}}"></ec-canvas>
+    <ec-canvas id="loanProportion" wx:if="{{thisItem == 2}}" canvas-id="loanProportion" ec="{{loanProportion}}"></ec-canvas>
+    <ec-canvas id="durationRatio" wx:if="{{thisItem == 3}}" canvas-id="durationRatio" ec="{{durationRatio}}"></ec-canvas>
+    <!--切换标题-->
+    <view class='tkm-tab-title tkm-page'>
+      <view class='tkm-flex tkm-page'>
+        <view class='item {{thisItem == 1?"active":""}}' bindtap="monthlyTransactionTap" data-num = "1">{{monthlyTransactionTitle}}</view>
+        <view class='item {{thisItem == 2?"active":""}}' bindtap="loanProportionTap" data-num = "2">{{loanProportionTitle}}</view>
+        <view class='item {{thisItem == 3?"active":""}}' bindtap="durationRatioTap" data-num = "3">{{durationRatioTitle}}</view>
+      </view>
+    </view>
+
+    <view class='tkm-dealTotal tkm-deal'>平台累计交易总额：<view class='detail'>{{dealTotal}}<text class='unit'>万元</text></view></view>
+    <view class='tkm-dealCount tkm-deal'>平台累计交易笔数：<view class='detail'>{{dealCount}}<text class='unit'>笔</text></view></view>
+
+  
+</view>
+
+<!--累计-->
+<view class='tkm-page'>
+  <view class='tkm-shadowBox tkm-addup'>
+    <view>
+      <view class='item'>
+        774.37 <view class='unit-wyuan'>万元</view>
+        <text>出借人累计赚取收益</text>
+      </view>
+      <view class='lineb'></view>
+      <view class='item'>
+        2,420.37 <view class='unit-wyuan'>万元</view>
+        <text>借款余额</text>
+      </view>
+    </view>
+    <view class='linea'></view>
+    <view>
+      <view class='item'>
+        1167 <view class='unit-wyuan'>人</view>
+        <text>累计出借人数</text>
+      </view>
+      <view class='lineb'></view>
+      <view class='item'>
+        251,489 <view class='unit-wyuan'>笔</view>
+        <text>累计借款总笔数</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--出借人性别分布占比-->
+<view class='tkm-page'>
+  <view class='tkm-shadowBox sexProportion'>
+   <view class='title'>出借性别分布占比</view>
+   <canvas canvas-id='sexProportion'></canvas>
+  </view>
+</view>
+
+<!--出借人性别分布占比-->
+<view class='tkm-page'>
+  <view class='tkm-shadowBox itemProportion'>
+   <view class='title'>项目金额分布占比</view>
+   <ec-canvas canvas-id='itemProportion' ec="{{itemProportion}}"></ec-canvas>
+  </view>
+</view>

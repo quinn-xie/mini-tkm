@@ -1,0 +1,82 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--项目详情-->
+<view class='tkm-loan'>
+  <view class='tkm-loanList tkm-page' hover-class="hoverClass" bindtap='toDetail'>
+    <!--loan title-->
+    <view class='title'>
+      <view class="state" wx:if="{{baseInfo.loanState == 2}}">{{baseInfo.loanStateString}}<icon class='icon greenbg'></icon></view>
+      <view class="state" wx:if="{{baseInfo.loanState == 3}}">{{baseInfo.loanStateString}}<icon class='icon bluebg'></icon></view>
+      <view class="state" wx:if="{{baseInfo.loanState == 4}}">{{baseInfo.loanStateString}}<icon class='icon graybg'></icon></view>
+      <view class="state" wx:if="{{baseInfo.loanState == 6}}">{{baseInfo.loanStateString}}<icon class='icon graybg'></icon></view>
+      <view class="state" wx:if="{{baseInfo.loanState == 7}}">{{baseInfo.loanStateString}}<icon class='icon bluebg'></icon></view>
+      {{baseInfo.loanTitle}} <text wx:for="{{baseInfo.tagList}}" wx:key="{{item.id}}" style='background:#{{item.color}};' class='unit'>{{item.title}}</text> 
+    </view>
+    <!--total money and percent-->
+    <view class='rote'>
+      {{baseInfo.yearRate}}%<text class='red' wx-if="{{baseInfo.increasedRate != 0}}"> + {{baseInfo.increasedRate}}%</text>
+      <view class='roteTitle'>年利率 <view class='percent'>{{baseInfo.investPercent}}%</view></view>
+    </view>
+    <!--progress-->
+    <progress percent="{{baseInfo.investPercent}}" active="true" stroke-width="3" activeColor="#8afd35" backgroundColor="#f5f5f5" />
+    <!--content-->
+    <view class='tkm-flexs'>
+      <view class='items'>
+        <view class='limitTitle'>{{baseInfo.borrowDeadline}}<text class='text'> {{baseInfo.timeLimitUnit}}</text></view>
+        <text class='s-title-l'>项目期限</text>
+      </view>
+      <view class='items'>
+        <view class='limitTitle'>{{baseInfo.borrowedMoney}}<text class='text'> 万</text></view>
+        <text class='s-title-c'>借款总额</text>
+      </view>
+      <view class='items' wx-if="{{baseInfo.loanState == 6}}">
+            <view class='limitTitle' style='font-size:small'>{{clock}}</view>
+            <text class='s-title-r'>倒计时</text>
+      </view>
+      <view class='items' wx:else>
+        <view class='limitTitle'>{{baseInfo.restInvestAmount}}<text class='text'> 万</text></view>
+        <text class='s-title-r'>可投金额</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--DETAILS CELLBOX-->
+<view class='tkm-cellBox tkm-page'>
+  <view class='tkm-cell' bindtap='loanDetailMsg' data-loanid="{{loanId}}">
+      <view class='pic'><image src='../../images/icon-a.png'></image></view>
+      <view class='name'>项目详情</view>
+      <image src='../../images/arrow-right.png' class='arrow-right'></image>
+  </view>
+  <view class='tkm-cell' bindtap='loanDetailInfo' data-loanid="{{loanId}}">
+      <view class='pic'><image src='../../images/icon-b.png'></image></view>
+      <view class='name'>项目信息</view>
+      <image src='../../images/arrow-right.png' class='arrow-right'></image>
+  </view>
+  <view class='tkm-cell' bindtap='loanDetailInvestRecord' data-loanid="{{loanId}}">
+      <view class='pic'><image src='../../images/icon-c.png'></image></view>
+      <view class='name'>投资记录</view>
+      <image src='../../images/arrow-right.png' class='arrow-right'></image>
+  </view>
+  <view class='tkm-cell' bindtap='loanDetaiRepayPlan' data-loanid="{{loanId}}">
+      <view class='pic'><image src='../../images/icon-d.png'></image></view>
+      <view class='name'>还款计划</view>
+      <image src='../../images/arrow-right.png' class='arrow-right'></image>
+  </view>
+</view>
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

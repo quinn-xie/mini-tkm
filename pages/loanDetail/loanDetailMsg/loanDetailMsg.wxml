@@ -1,0 +1,136 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--项目详情-项目详情-->
+<view class='tkm-page'>
+  <!-- 以下所有产品都存在 -->
+  <view class='tkm-loanDetailMsg-list'>
+    <icon><image src='../../../images/hkfs.png'></image></icon>
+    <view class='content'>
+      <view class='title'>还款方式</view>
+      <text>{{loanDetailMsg.repayWay}}</text>
+    </view>
+  </view>
+  <view class='tkm-loanDetailMsg-list'>
+    <icon><image src='../../../images/fbsj.png'></image></icon>
+    <view class='content'>
+      <view class='title'>发布时间</view>
+      <text>{{loanDetailMsg.publishTime}}</text>
+    </view>
+  </view>
+ 
+  <!-- 红本抵押  -->
+  <block wx:if="{{loanDetailMsg.product == '红本抵押'}}">
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/bznx.png'></image></icon>
+      <view class='content'>
+        <view class='title'>保障类型</view>
+        <text>足值房产抵押，逾期债权收购</text>
+      </view>
+    </view>
+  </block>
+
+  <!-- 票据  -->
+  <block wx:if="{{loanDetailMsg.product == '票据'}}">
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/cdyh.png'></image></icon>
+      <view class='content'>
+        <view class='title'>承兑银行</view>
+        <text>{{loanDetailMsg.conversionBankName}}</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/jkyt.png'></image></icon>
+      <view class='content'>
+        <view class='title'>借款用途</view>
+        <text>资金周转</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/qxr.png'></image></icon>
+      <view class='content'>
+        <view class='title'>起息日</view>
+        <text>放款后开始计息</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/jxr.png'></image></icon>
+      <view class='content'>
+        <view class='title'>结息日</view>
+        <text>{{loanDetailMsg.acceptanceDate}}</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/zchkr.png'></image></icon>
+      <view class='content'>
+        <view class='title'>最迟还款日</view>
+        <text>{{loanDetailMsg.latestRepaymentDate}}</text>
+      </view>
+    </view>
+  </block>
+
+  <!-- 保理  -->
+  <block wx:if="{{loanDetailMsg.product == '保理'}}">
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/bznx.png'></image></icon>
+      <view class='content'>
+        <view class='title'>保障类型</view>
+        <text>第三方提供连带责任保证</text>
+      </view>
+    </view>
+  </block>
+
+  <!-- 什马分期 && 什马信用贷  -->
+  <block wx:if="{{loanDetailMsg.product == '什马分期' || loanDetailMsg.product == '什马信用贷'}}">
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/bznx.png'></image></icon>
+      <view class='content'>
+        <view class='title'>保障类型</view>
+        <text>第三方机构提供连带责任保证担保</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/qxr.png'></image></icon>
+      <view class='content'>
+        <view class='title'>起息日</view>
+        <text>满标放款即计息</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/mjqx.png'></image></icon>
+      <view class='content'>
+        <view class='title'>募集期限</view>
+        <text>20天</text>
+      </view>
+    </view>
+  </block>
+  
+  <!-- 恒信薪贷  -->
+  <block wx:if="{{loanDetailMsg.product == '恒信薪贷' || loanDetailMsg.product == '恒信业贷'}}">
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/qxr.png'></image></icon>
+      <view class='content'>
+        <view class='title'>起息日</view>
+        <text>满标放款即计息</text>
+      </view>
+    </view>
+    <view class='tkm-loanDetailMsg-list'>
+      <icon><image src='../../../images/mjqx.png'></image></icon>
+      <view class='content'>
+        <view class='title'>募集期限</view>
+        <text>20天</text>
+      </view>
+    </view>
+  </block>
+</view>

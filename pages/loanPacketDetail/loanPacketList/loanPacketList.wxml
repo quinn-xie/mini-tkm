@@ -1,0 +1,31 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<view class='fixedTop'>
+  <text class='ta-l'>项目编号</text>
+  <text class='ta-c'>借款金额</text>
+  <text class='ta-r'>可投金额</text>
+</view>
+<view class='tkm-content'>
+  <view wx:for="{{repayPlan}}" wx:key="item.loanSignId" bindtap='toDetail' data-loanSignId="{{item.loanSignId}}">
+    <text class='ta-l'>{{item.loanNumber}}</text>
+    <text class='ta-c'>{{item.borrowedMoney}}万</text>
+    <text class='ta-r'>{{item.restInvestAmount}}万</text>
+  </view>
+</view>
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

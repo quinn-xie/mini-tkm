@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#3f77ff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "交易记录",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "小马优选",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

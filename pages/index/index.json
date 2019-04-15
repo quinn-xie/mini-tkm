@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#fafafa",
+  "navigationBarTitleText": "太空马小程序",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

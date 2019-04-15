@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#3f77ff",
+  "backgroundColor": "#ffffff",
+  "navigationBarTitleText": "出借管理",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

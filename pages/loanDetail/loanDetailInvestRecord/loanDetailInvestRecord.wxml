@@ -1,0 +1,41 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--项目详情-出借记录-->
+<block wx:if="{{nodata==true}}">
+  <view class='noData'>
+    <image src='../../../images/nodata.png' mode="widthFix"></image>
+    暂无数据
+  </view>
+</block>
+<block wx:else>
+  <view class='fixedTop'>
+    <text style='text-align:left'>出借人</text>
+    <text>出借资金</text>
+    <text style='text-align:right'>出借时间</text>
+  </view>
+  <view class='tkm-content'>
+    <view wx:for="{{investRecord}}" wx:key="index">
+      <text style='text-align:left'>{{item.investorName}}</text>
+      <text>{{item.investMoney}}</text>
+      <text style='text-align:right'>{{item.dayyymmdd}}\n{{item.timeHHmmss}}</text>
+    </view>
+  </view>
+  <view class='onReachBottom' wx:if="{{onReachBottom}}">已经到底，暂无更多</view>
+  <!--BTN-->
+  <!-- <view class='gap'></view>
+  <view class='btn-fixed'>
+      <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+  </view> -->
+</block>

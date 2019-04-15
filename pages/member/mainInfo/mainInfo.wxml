@@ -1,0 +1,69 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<view class='tkm-mainInftoTopBanner'>
+  <image src='../../../images/mainInfoBg.png' mode="widthFix" class='banner'></image>
+  <image src='../../../images/set.png' mode="widthFix" class='setting'></image>
+  <view class='mainInfo'>
+    <view class='avatar'><open-data type="userAvatarUrl"></open-data></view>
+    <view class='totalMoney'>
+      8888888.88
+      <text>资产总额</text>
+    </view>
+    <view class='menu'><image src='../../../images/menu.png' mode="widthFix"></image></view>
+    <view class='balance'>
+      <view class='item'>
+        8888888.88
+        <text>资产总额</text>
+      </view>
+      <view class='item'>
+        8888888.88
+        <text>资产总额</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='tkm-mainInfoBox'>
+    <view class='subBox' hover-class='hoverClass'>
+      <image src='../../../images/icon-member-e.png' class='autoImg'></image>充值
+    </view>
+    <view class='subBox' hover-class='hoverClass'>
+      <image src='../../../images/icon-member-f.png' class='autoImg'></image>提现
+    </view>
+    <navigator hover-class='none' url='/pages/member/mainInfo/loanManagement/loanManagement'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/icon-member-a.png' class='fixedImg' mode="widthFix"></image>
+        <text class='ta-c'>出借管理</text>
+      </view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/member/mainInfo/calendar/calendar'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/icon-member-b.png' class='fixedImg' mode="widthFix"></image>
+        <text class='ta-c'>日历</text>
+      </view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/member/mainInfo/dealRecords/dealRecords'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/icon-member-c.png' class='fixedImg' mode="widthFix"></image>
+        <text class='ta-c'>交易记录</text>
+      </view>
+    </navigator>
+    <navigator hover-class='none' url='/pages/member/mainInfo/myReward/myReward'>
+      <view class='subBox' hover-class='hoverClass'>
+        <image src='../../../images/icon-member-d.png' class='fixedImg' mode="widthFix"></image>
+        <text class='ta-c'>我的奖励</text>
+      </view>
+    </navigator>
+
+</view>

@@ -1,0 +1,119 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--标题-->
+<view class='tkm-tab tkm-loanManagementTitle tkm-page'>
+    <view class='tabItem {{thisItem == 1?"active":""}}' bindtap = "paymentTap" data-num = "1">{{payment}} </view>
+    <view class='tabItem {{thisItem == 2?"active":""}}' bindtap = "investmentTap" data-num = "2">{{investment}}</view>
+    <view class='tabItem {{thisItem == 3?"active":""}}' bindtap = "completedTap" data-num = "3">{{completed}}</view>
+</view>
+<!--回款中-->
+<view wx:if="{{thisItem == 1}}">
+  <view class='tkm-loanManagementContent tkm-page' wx:key="{{index}}" wx:for="{{paymentList}}">
+        <view class='title'>{{item.title}}</view>
+      <view class='line'></view>
+        <view class='content'>
+          <view class='l'>待收金额</view>
+          <view class='r'>{{item.dueIn}}</view>
+        </view>
+        <view class='content'>
+          <view class='l'>投资金额</view>
+          <view class='r'>{{item.investmentAmount}}</view>
+        </view>
+      <view class='line'></view>
+        <view class='content'>
+          <view class='l'>年利率</view>
+          <view class='r'>{{item.rate}} %</view>
+        </view>
+        <view class='content'>
+          <view class='l'>期数</view>
+          <view class='r'>{{item.nper}}</view>
+        </view>
+        <view class='content'>
+          <view class='l'>下个还款日期</view>
+          <view class='r'>{{item.nextRepayDate}}</view>
+        </view>
+      <view class='line'></view>
+        <view class='btn'>
+            <navigator hover-class='none' url='##'>
+              <view class='btn-a'>查看合同</view>
+            </navigator>
+            <navigator hover-class='none' url='##'>
+              <view class='btn-b'>转让</view>
+            </navigator>
+        </view>
+  </view>
+</view>
+<!--投标中-->
+<view wx:elif="{{thisItem == 2}}">
+  <view class='tkm-loanManagementContent' wx:key="{{index}}" wx:for="{{investmentList}}">
+        <view class='title'>{{item.title}}</view>
+      <view class='line'></view>
+        <view class='content'>
+          <view class='l'>投资金额</view>
+          <view class='r'>{{item.investmentAmount}}</view>
+        </view>
+      <view class='line'></view>
+        <view class='content'>
+          <view class='l'>年利率</view>
+          <view class='r'>{{item.rate}} %</view>
+        </view>
+        <view class='content'>
+          <view class='l'>期数</view>
+          <view class='r'>{{item.nper}}</view>
+        </view>
+        <view class='content'>
+          <view class='l'>剩余时间</view>
+          <view class='r'>{{item.remainTime}}</view>
+        </view>
+        <view class='content'>
+          <view class='l'>投标进度</view>
+          <view class='r'>{{item.progress}}</view>
+        </view>
+  </view>
+</view>
+<!--已完成-->
+<view wx:elif="{{thisItem == 3}}">
+    <view class='tkm-loanManagementContent' wx:key="{{index}}" wx:for="{{completedList}}">
+        <view class='title'>{{item.title}}</view>
+      <view class='line'></view>
+        <view class='content'>
+          <view class='l'>投资金额</view>
+          <view class='r'>{{item.investmentAmount}}</view>
+        </view>
+        <view class='content'>
+          <view class='l'>回收金额</view>
+          <view class='r'>{{item.recoveryAmount}}</view>
+        </view>
+        <view class='content'>
+          <view class='l'>已赚金额</view>
+          <view class='r'>{{item.earnAmount}}</view>
+        </view>
+      <view class='line'></view>
+        <view class='content'>
+          <view class='l'>年利率</view>
+          <view class='r'>{{item.rate}} %</view>
+        </view>
+        <view class='content'>
+          <view class='l'>结清日期</view>
+          <view class='r'>{{item.settleDate}}</view>
+        </view>
+      <view class='line'></view>
+        <view class='btn'>
+            <navigator hover-class='none' url='##'>
+              <view class='btn-a'>查看合同</view>
+            </navigator>
+        </view>
+  </view>
+</view>

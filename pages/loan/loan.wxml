@@ -1,0 +1,156 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--出借列表-->  
+<view class='tkm-tab-title'>
+  <view class='tkm-flex radioBox tkm-page'>
+    <view class='item {{thisItem == 1?"active":""}}' bindtap="tkmyxTap" data-num = "1">{{tkmYX}}</view>
+    <view class='item {{thisItem == 2?"active":""}}' bindtap="tkmycTap" data-num = "2">{{tkmYC}}</view>
+    <view class='item {{thisItem == 3?"active":""}}' bindtap="tkmjsTap" data-num = "3">{{tkmJS}}</view>
+  </view>
+</view>
+<!--小马优选-->
+<view class='tkm-loan tkm-page' wx:if="{{thisItem == 1}}">
+  <view class='tkm-loanList' wx:for="{{loanYXList}}" wx:key="{{item.loanSignId}}" hover-class="hoverClass" bindtap='toPacketDetail' data-loanid="{{item.loanSignId}}">
+    <!--loan title-->
+    <view class='title'>
+      <view class="state" wx:if="{{item.loanState == 2}}">{{item.loanStateString}}<icon class='icon greenbg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 3}}">{{item.loanStateString}}<icon class='icon bluebg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 4}}">{{item.loanStateString}}<icon class='icon graybg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 6}}">{{item.loanStateString}}<icon class='icon graybg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 7}}">{{item.loanStateString}}<icon class='icon bluebg'></icon></view>
+      {{item.loanTitle}} <text wx:for="{{item.tagList}}" wx:key="{{item.id}}" style='background:#{{item.color}};' class='unit'>{{item.title}}</text>
+    </view>
+    <!--content-->
+    <view class='tkm-flexs'>
+      <view class='items'>
+        <view class='limitTitle'>{{item.yearRate}}%<text class='red' wx-if="{{item.increasedRate != 0}}">+{{item.increasedRate}}%</text></view>
+        <text class='s-title-l'>年利率</text>
+      </view>
+      
+      <view class='items'>
+        <view class='limitTitle'>{{item.borrowDeadline}}<text class='text'> {{item.timeLimitUnit}}</text></view>
+        <text class='s-title-c'>项目期限</text>
+      </view>
+
+      <view class='items' wx:if="{{item.loanState == 6}}">
+            <view class='limitTitle' style='font-size:small'>{{item.clock}}</view>
+            <text class='s-title-r'>倒计时</text>
+      </view>
+
+      <view class='items' wx:else>
+        <view class='limitTitle'>{{item.restInvestAmount}}<text class='text'> 万</text></view>
+        <text class='s-title-r'>剩余可投金额</text>
+      </view>
+
+    </view>
+    <!--progress-->
+    <progress percent="{{item.investPercent}}" stroke-width="3" activeColor="#3f77ff" backgroundColor="#f5f5f5" />
+    <!--total money and percent-->
+    <view class='totalMoney'>
+      <view class='percent'>{{item.investPercent}}%</view>
+      <view>借款总额：<text class='duckblue'>{{item.borrowedMoney}}万</text></view>
+    </view>
+  </view>
+
+  <view class='onReachBottom' wx:if='{{YXonReachBottom}}'>已经到底，暂无更多</view>
+
+</view>
+
+
+<!--小马有财-->
+<view class='tkm-loan tkm-page' wx:if="{{thisItem == 2}}">
+  <view class='tkm-loanList' wx:for="{{loanYCList}}" wx:key="{{item.loanSignId}}" hover-class="hoverClass" bindtap='toDetail' data-loanSignId="{{item.loanSignId}}">
+    <!--loan title-->
+    <view class='title'>
+      <view class="state" wx:if="{{item.loanState == 2}}">{{item.loanStateString}}<icon class='icon greenbg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 3}}">{{item.loanStateString}}<icon class='icon bluebg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 4}}">{{item.loanStateString}}<icon class='icon graybg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 6}}">{{item.loanStateString}}<icon class='icon graybg'></icon></view>
+      <view class="state" wx:if="{{item.loanState == 7}}">{{item.loanStateString}}<icon class='icon bluebg'></icon></view>
+      {{item.loanTitle}} <text wx:for="{{item.tagList}}" wx:key="{{item.id}}" style='background:#{{item.color}};' class='unit'>{{item.title}}</text>
+    </view>
+    <!--content-->
+    <view class='tkm-flexs'>
+      <view class='items'>
+        <view class='limitTitle'>{{item.yearRate}}%<text class='red' wx-if="{{item.increasedRate != 0}}">+{{item.increasedRate}}%</text></view>
+        <text class='s-title-l'>年利率</text>
+      </view>
+      
+      <view class='items'>
+        <view class='limitTitle'>{{item.borrowDeadline}}<text class='text'> {{item.timeLimitUnit}}</text></view>
+        <text class='s-title-c'>项目期限</text>
+      </view>
+
+      <view class='items' wx:if="{{item.loanState == 6}}">
+            <view class='limitTitle' style='font-size:small'>{{item.clock}}</view>
+            <text class='s-title-r'>倒计时</text>
+      </view>
+
+      <view class='items' wx:else>
+        <view class='limitTitle'>{{item.restInvestAmount}}<text class='text'> 万</text></view>
+        <text class='s-title-r'>剩余可投金额</text>
+      </view>
+
+    </view>
+    <!--progress-->
+    <progress percent="{{item.investPercent}}" stroke-width="3" activeColor="#3f77ff" backgroundColor="#f5f5f5" />
+    <!--total money and percent-->
+    <view class='totalMoney'>
+      <view class='percent'>{{item.investPercent}}%</view>
+      <view>借款总额：<text class='duckblue'>{{item.borrowedMoney}}万</text></view>
+    </view>
+  </view>
+
+  <view class='onReachBottom' wx:if="{{YConReachBottom}}">已经到底，暂无更多</view>
+
+</view>
+
+
+<!--小马集市-->
+<view class='tkm-loan tkm-page' wx:if="{{thisItem == 3}}">
+  <view class='noData' wx:if="{{jsnodata==true}}">
+    <image src='../../images/nodata.png' mode="widthFix"></image>
+    暂无数据
+  </view>
+  <view wx:if="{{jshavedata==true}}" class='tkm-loanList' wx:for="{{loanJSList}}" wx:key="{{item.loanSignId}}" hover-class="hoverClass" bindtap='toDetail' data-loanid="{{item.loanSignId}}">
+    <!--loan title-->
+    <view class='title'>
+      {{item.loanTitle}}
+    </view>
+    <!--content-->
+    <view class='tkm-flexs'>
+      <view class='items'>
+        <view class='limitTitle'>{{item.yearRate}}%<text class='red' wx-if="{{item.increasedRate != 0}}">+{{item.increasedRate}}%</text></view>
+        <text class='s-title-l'>年利率</text>
+      </view>
+      
+      <view class='items'>
+        <view class='limitTitle'>{{item.restPeriod}}<text class='text'> 个月</text></view>
+        <text class='s-title-c'>项目剩余期限</text>
+      </view>
+
+      <view class='items'>
+        <view class='limitTitle'>{{item.surplusMoney}}<text class='text'> 万</text></view>
+        <text class='s-title-r'>剩余可投金额</text>
+      </view>
+
+    </view>
+    
+  </view>
+
+  <view class='onReachBottom' wx:if="{{JSonReachBottom}}">已经到底，暂无更多</view>
+
+</view>
+

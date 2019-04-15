@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/loan/loan",
+    "pages/loanDetail/loanDetail",
+    "pages/loanDetail/loanDetailMsg/loanDetailMsg",
+    "pages/loanDetail/loanDetailInfo-hb/loanDetailInfo-hb",
+    "pages/loanDetail/loanDetailInfo-pj/loanDetailInfo-pj",
+    "pages/loanDetail/loanDetailInfo-yb/loanDetailInfo-yb",
+    "pages/loanDetail/loanDetailInfo-hxc/loanDetailInfo-hxc",
+    "pages/loanDetail/loanDetailInfo-hxb/loanDetailInfo-hxb",
+    "pages/loanDetail/loanDetailInfo-fqc/loanDetailInfo-fqc",
+    "pages/loanDetail/loanDetailInfo-xyb/loanDetailInfo-xyb",
+    "pages/loanDetail/loanDetailInfo-smOld/loanDetailInfo-smOld",
+    "pages/loanDetail/loanDetailInvestRecord/loanDetailInvestRecord",
+    "pages/loanDetail/loanDetaiRepayPlan/loanDetaiRepayPlan",
+    "pages/loanPacketDetail/loanPacketDetail",
+    "pages/loanPacketDetail/loanPacketMsg/loanPacketMsg",
+    "pages/loanPacketDetail/loanPacketInfo/loanPacketInfo",
+    "pages/loanPacketDetail/loanPacketList/loanPacketList",
+    "pages/discover/discover",
+    "pages/discover/disclose/disclose",
+    "pages/discover/disclose/beian/beian",
+    "pages/discover/disclose/operateReport/operateReport",
+    "pages/discover/disclose/auditReport/auditReport",
+    "pages/discover/disclose/commitmentLetter/commitmentLetter",
+    "pages/discover/disclose/tkmBaseInfo/tkmBaseInfo",
+    "pages/discover/disclose/tkmdataView/tkmdataView",
+    "pages/member/member",
+    "pages/member/mainInfo/mainInfo",
+    "pages/member/mainInfo/loanManagement/loanManagement",
+    "pages/member/mainInfo/myReward/myReward",
+    "pages/member/mainInfo/dealRecords/dealRecords",
+    "pages/member/mainInfo/calendar/calendar",
+    "pages/webview/webview",
+    "pages/article/article",
+    "pages/articleDetail/articleDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "太空马小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#002d5c",
+    "selectedColor": "#002d5c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "images/tabBarIcon-index-active.png",
+        "iconPath": "images/tabBarIcon-index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tabBarIcon-loan-active.png",
+        "iconPath": "images/tabBarIcon-loan.png",
+        "pagePath": "pages/loan/loan",
+        "text": "出借"
+      },
+      {
+        "selectedIconPath": "images/tabBarIcon-discover-active.png",
+        "iconPath": "images/tabBarIcon-discover.png",
+        "pagePath": "pages/discover/discover",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "images/tabBarIcon-member-active.png",
+        "iconPath": "images/tabBarIcon-member.png",
+        "pagePath": "pages/member/mainInfo/mainInfo",
+        "text": "我的"
+      }
+    ]
+  }
+}

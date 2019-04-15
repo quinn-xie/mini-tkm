@@ -1,0 +1,36 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../../style/common.wxss';
+.tkm-mainInftoTopBanner{width:100%;height:260rpx;background-color:#3f77ff;position:relative;letter-spacing:2px;}
+.tkm-mainInftoTopBanner .banner{width:100%;position:absolute;left:0;top:0;}
+.tkm-mainInftoTopBanner .setting{width:50rpx;position:absolute;right:20rpx;top:20rpx;}
+.tkm-mainInftoTopBanner .mainInfo{width:94%;position:absolute;left:3%;box-shadow:0px 0px 15px rgba(195,195,195,.7);background-color:#ffffff;border-radius:10rpx;box-sizing:border-box;padding:20rpx;top:130rpx;height:280rpx;}
+.tkm-mainInftoTopBanner .mainInfo .avatar{width:160rpx;height:160rpx;border-radius:6rpx;box-shadow:0px 0px 10px rgba(165,165,165,.7);box-sizing:border-box;padding:6rpx;position:absolute;top:-40rpx;left:30rpx;background-color:#ffffff;}
+.tkm-mainInftoTopBanner .mainInfo .avatar image{width:100%;}
+.tkm-mainInftoTopBanner .mainInfo .totalMoney{position:absolute;font-size:large;font-weight:bold;color:#002d5c;left:220rpx;}
+.tkm-mainInftoTopBanner .mainInfo .totalMoney text{display:block;font-size:small;font-weight:normal;color:#808080;}
+.tkm-mainInftoTopBanner .mainInfo .menu{width:50rpx;position:absolute;top:40rpx;right:20rpx;}
+.tkm-mainInftoTopBanner .mainInfo .balance{position:absolute;width:100%;top:160rpx;}
+.tkm-mainInftoTopBanner .mainInfo .balance .item{font-size:large;font-weight:bold;color:#002d5c;width:45%;display:inline-block;box-sizing:border-box;padding-left:10rpx;border-right:1px solid #ececec;}
+.tkm-mainInftoTopBanner .mainInfo .balance .item text{display:block;font-size:small;font-weight:normal;color:#808080;}
+.tkm-mainInftoTopBanner .mainInfo .balance .item:last-child{border-right:none;margin-left:10%;}
+
+.tkm-mainInfoBox{width:100%;margin-top:170rpx;text-align:center;font-size:medium;font-weight:bold;color:#002d5c;}
+.tkm-mainInfoBox navigator{display:inline}
+.tkm-mainInfoBox .subBox{width:44%;box-shadow:0px 0px 10px rgba(195,195,195,.7);padding:20rpx 30rpx;border-radius:15rpx;margin:10px 3%;box-sizing:border-box;display:inline-block;vertical-align:top;}
+.tkm-mainInfoBox .autoImg{width:70rpx;height:70rpx;vertical-align:middle;margin-right:20rpx;}
+.tkm-mainInfoBox .fixedImg{width:180rpx;height:180rpx;margin:20rpx auto;display:block}
+.tkm-mainInfoBox text{width:100%;display:block;}
+.tkm-mainInfoBox .hoverClass{box-shadow:0px 0px 15px rgba(63,119,255,.4)}

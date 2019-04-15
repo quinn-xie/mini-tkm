@@ -1,0 +1,118 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!----------------------红本抵押-------------------------->
+<!--借款人信息-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>借款人信息</view>
+  <view class='content cellBox'>
+      <view class='subTitle'>借款人</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerName}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>性别</view>
+      <view class='subContent'>{{loadDetailInfo.sex==1?"男":"女"}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>年龄</view>
+      <view class='subContent'>{{loadDetailInfo.borrowerAge}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>婚姻状态</view>
+      <view class='subContent'>{{loadDetailInfo.marriage}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>所属行业</view>
+      <view class='subContent'>{{loadDetailInfo.industry}}</view>
+  </view>
+  <view class='content cellBox'>
+      <view class='subTitle'>月薪</view>
+      <view class='subContent'>{{loadDetailInfo.income}}</view>
+  </view>
+</view>
+
+<!--借款描述-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>借款描述</view>
+  <text class='content'>{{loadDetailInfo.overview}}</text>
+</view>
+
+<!--借款描述-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>还款来源</view>
+  <text class='content'>{{loadDetailInfo.repaymentDescription}}</text>
+</view>
+
+<!--抵押物描述-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>抵押物描述</view>
+  <text class='content'>{{loadDetailInfo.mortgageObjectDetail}}</text>
+</view>
+
+<!--保障措施（担保情况）-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>保障措施（担保情况）</view>
+  <text class='content'>{{loadDetailInfo.guaranteeDescription}}</text>
+</view>
+
+<!--风控评审信息-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>风控评审信息</view>
+  <text class='content'>{{loadDetailInfo.riskDescription}}</text>
+</view>
+
+<!--相关附件-->
+<view class='tkm-loanDetailInfo tkm-page'>
+  <view class='title'>相关附件</view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentBorrowerIdentityCard != 0}}">
+      <view class='subTitle'>借款人身份证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentChargeCertificate != 0}}">
+      <view class='subTitle'>收款确认书</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentImmovablesCertification != 0}}">
+      <view class='subTitle'>不动产权登记证明</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentIndoorPhoto != 0}}">
+      <view class='subTitle'>室内照片</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentOutdoorPhoto != 0}}">
+      <view class='subTitle'>室外照片</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentPremisesPermit != 0}}">
+      <view class='subTitle'>房产证</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentOriginalLoanContract != 0}}">
+      <view class='subTitle'>原借款合同</view>
+      <icon></icon>
+  </view>
+  <view class='content cellBox' wx:if="{{loadDetailInfo.attachmentScreenshotForConsultingFile != 0}}">
+      <view class='subTitle'>查档截图</view>
+      <icon></icon>
+  </view>
+</view>
+
+
+
+<!--BTN-->
+<!-- <view class='gap'></view>
+<view class='btn-fixed'>
+    <button type="primary" class='btnPrimary' hover-class="other-button-hover"> 立即出借 </button>
+</view> -->

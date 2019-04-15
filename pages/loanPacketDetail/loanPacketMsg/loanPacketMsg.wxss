@@ -1,0 +1,22 @@
+/*
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+*/
+@import '../../../style/common.wxss';
+/*项目详情*/
+.tkm-loanDetailMsg-list{padding:20rpx;background:#ffffff;border-radius:15rpx;box-sizing:border-box;margin:40rpx 0;box-shadow:0px 0px 10px rgba(128,128,128,.3);font-size:small;color:#808080;letter-spacing:2px;position:relative}
+.tkm-loanDetailMsg-list icon{width:120rpx;height:120rpx;border-radius:120px;background-color:#e9f1ff; text-align:center;display:inline-block;vertical-align:middle;box-sizing:border-box;}
+.tkm-loanDetailMsg-list icon image{width:70rpx;height:70rpx;margin-top:30rpx;}
+.tkm-loanDetailMsg-list .content{display:inline-block;vertical-align:middle;margin-left:30rpx}
+.tkm-loanDetailMsg-list .content .title,.tkm-loanDetailMsg-list .rightContent .title{font-size:medium;color:#002d5c;line-height:200%;}
+.tkm-loanDetailMsg-list .rightContent{position:absolute;top:30rpx;right:20rpx;text-align:right;}

@@ -1,0 +1,154 @@
+<!--
+  *======@Description:       太空马小程序======*
+  *======@Version:                v1.0.0======*
+  *======@Author:                  DaXia======*
+  ---------------------------------------------
+  ========***=============**======**===========
+  ========**=============**==************======
+  ===***************====**=====**=**=**========
+  ======**=**=========****=****************====
+  =====**===**===========**=====**==**=========
+  ====**=====***=========**====**====**========
+  ===**=======****=======**==***======**=======
+  ---------------------------------------------
+-->
+<!--营业执照信息-->
+<view class='tkm-page'>
+  <view class='tkm-baseInfoTitle'>营业执照信息</view>
+  <view class='tkm-shadowBox'>
+    <view class='content'>
+        <text class='line'>统一社会信用代码： 91440300358767898Y</text>
+    </view>
+    <view class='content'>
+        <text class='line'>企业名称： 深圳市也买股互联网金融服务有限公司</text>
+    </view>
+    <view class='content'>
+        <text class='line'>类型： 有限责任公司</text>
+    </view>
+     <view class='content'>
+        <text class='line'>法定代表人： 袁瑞</text>
+    </view>
+     <view class='content'>
+        <text class='line'>注册资本： 10000.000000万人民币</text>
+    </view>
+     <view class='content'>
+        <text class='line'>成立日期： 2015年10月16日</text>
+    </view>
+     <view class='content'>
+        <text class='line'>营业期限自： 2015年10月16日</text>
+    </view>
+     <view class='content'>
+        <text class='line'>营业期限至： 5000年01月01日</text>
+    </view>
+     <view class='content'>
+        <text class='line'>登记机关： 深圳市市场监督管理局</text>
+    </view>
+     <view class='content'>
+        <text class='line'>核准日期： 2017年12月07日</text>
+    </view>
+     <view class='content'>
+        <text class='line'>登记状态： 存续（在营、开业、在册）</text>
+    </view>
+     <view class='content'>
+        <text class='line'>住所： 深圳市福田区福田街道福虹路世界贸易广场C座1904、1905、1906</text>
+    </view>
+  </view>
+</view>
+
+<!--营业执照信息-->
+<view class='tkm-baseInfoTitle tkm-page'>股东股权占比</view>
+<view class='tkm-row-flex tkm-equity'>
+    <view class='col'>
+      <canvas canvas-id="sharesa"></canvas>
+      <text class='title gray'>自然人股东</text>
+      <text class='name duckblue'>袁瑞</text>
+      <text class='scale duckblue'>股权占比：34%</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="sharesb"></canvas>
+      <text class='title gray'>自然人股东</text>
+      <text class='name duckblue'>黄伟明</text>
+      <text class='scale duckblue'>股权占比：33%</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="sharesc"></canvas>
+      <text class='title gray'>自然人股东</text>
+      <text class='name duckblue'>陈少林</text>
+      <text class='scale duckblue'>股权占比：33%</text>
+    </view>
+</view>
+
+<!--组织架构-->
+<view class='tkm-baseInfoTitle tkm-page'>组织架构</view>
+<view class='tkm-page'>      
+  <view class='tkm-shadowBox' wx:for='{{imgList}}' wx:key="{{index}}">
+    <image src='{{item}}' data-index='{{index}}' bindtap='previewImage' mode='widthFix'></image>
+  </view>
+</view>
+
+<!--主要人员信息-->
+<view class='tkm-baseInfoTitle tkm-page'>主要人员信息</view>
+<view class='tkm-row-flex tkm-equity'>
+    <view class='col'>
+      <image src='../../../../images/icon-a.png' class='s-image' mode='widthFix'></image>
+      <text class='title gray'>执行董事</text>
+      <text class='name duckblue'>袁瑞</text>
+    </view>
+    <view class='col'>
+      <image src='../../../../images/icon-b.png' class='s-image' mode='widthFix'></image>
+      <text class='title gray'>总经理</text>
+      <text class='name duckblue'>袁瑞</text>
+    </view>
+    <view class='col'>
+      <image src='../../../../images/icon-c.png' class='s-image' mode='widthFix'></image>
+      <text class='title gray'>监事</text>
+      <text class='name duckblue'>黄子超</text>
+    </view>
+</view>
+
+<!--平台从业人员概况-->
+<view class='tkm-baseInfoTitle tkm-page'>平台从业人员概况</view>
+<view class='tkm-page'>
+ <view class='tkm-shadowBox'>
+  <view class='titles tkm-page'>平台从业人员概况</view>
+  <view class='tkm-row-flex'>
+    <view class='col'>
+      <canvas canvas-id="undergraduate"></canvas>
+      <text>本科：17人</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="junior"></canvas>
+      <text>大专：7人</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="master"></canvas>
+      <text>硕士：1人</text>
+    </view>
+  </view>
+  </view>
+</view>
+
+<!--年龄分布占比-->
+<view class='tkm-page'>
+  <view class='tkm-shadowBox'>
+  <view class='titles tkm-page'>年龄分布占比</view>
+  <view class='tkm-row-flex'>
+    <view class='col'>
+      <canvas canvas-id="sorta"></canvas>
+      <text>25-30:15人</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="sortb"></canvas>
+      <text>31-35:6人</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="sortc"></canvas>
+      <text>35以上:2人</text>
+    </view>
+    <view class='col'>
+      <canvas canvas-id="sortd"></canvas>
+      <text>25以下:2人</text>
+    </view>
+  </view>
+  </view>
+</view>
